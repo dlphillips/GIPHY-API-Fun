@@ -34,41 +34,36 @@ $(document).ready(function() {
                 // var imageUrl = response.data.image_original_url;
 
                 for (var i = 0; i < 10; i++) {
-                    imageUrl[i] = response.data[i].images.fixed_width.url;
-                    stillimageUrl[i] = response.data[i].images.fixed_width_still.url;
+                    imageUrl[i] = response.data[i].images.fixed_height.url;
+                    stillimageUrl[i] = response.data[i].images.fixed_height_still.url;
                     var imgDiv = $("<div>");
-                    imgDiv.addClass("imageDiv");
+                    imgDiv.addClass("imageDiv image well well-sm");
                     var cImage = $("<img>");
                     cImage.attr("src", stillimageUrl[i]);
                     cImage.attr("alt", bClick + " Image #" + i);
                     cImage.attr("alt_src", imageUrl[i]);
-                    cImage.addClass("image");
+                    cImage.addClass("image well well-sm");
                     cImage.attr("data-imgid", i);
                     imgDiv.append(cImage);
                     var imgRating = $("<h3>");
-                    imgRating.text("Rating: " + response.data[i].rating);
+                    imgRating.text("Rating: " + response.data[i].rating.toUpperCase());
                     imgDiv.append(imgRating);
                     switch (i) {
                         case 0:
+                        case 2:
                         case 4:
+                        case 6:
+                        case 8:
                             $("#images-1").append(imgDiv);
                             break;
                         case 1:
+                        case 3:
                         case 5:
-                        case 8:
+                        case 7:
+                        case 9:
                             $("#images-2").append(imgDiv);
                             break;
-                        case 2:
-                        case 6:
-                        case 9:
-                            $("#images-3").append(imgDiv);
-                            break;
-                        case 3:
-                        case 7:
-                            $("#images-4").append(imgDiv);
-                            break;
                     }
-
                 }
             });
     }
@@ -79,8 +74,16 @@ $(document).ready(function() {
         $(this).attr('alt_src', tmp);
     }
 
+    function addBtn() {
+        event.preventDefault();
+        var tFeeling = $("#feeling").val().trim();
+        myButtons.push(tFeeling);
+        createButtons();
+    }
+
     $(document).on("click", ".subject", subjectClick);
     $(document).on("click", ".image", imageSwitch);
+    $("#feelingSubmit").on("click", addBtn);
 
     createButtons();
 

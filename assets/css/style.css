@@ -1,7 +1,23 @@
-.jumbotron {
-	font-size: 100px;
+body {
+	font-family: 'Varela Round', sans-serif;
+	background-color: #89bdd3;
 }
 
-.imageDiv {
+.jumbotron {
+	font-size: 150px;
+	font-weight: bolder;
+	background-color: #0C98CF;
+	color: #e3e3e3;
+}
+
+#images-1, #images-2 {
+	background-color: #c9c9c9;
 	text-align: center;
 }
+
+h3 {
+	background-color: #0C98CF;
+	color: #fae596;
+	font-weight: bolder;
+}
+
