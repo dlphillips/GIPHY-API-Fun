@@ -1,10 +1,8 @@
 $(document).ready(function() {
 
     var myButtons = ["Joyful", "Proud", "Enthusiastic", "Guilty", "Vengeful", "Worried", "Shocked", "Embarrassed", "Enamored", "Fearful", "Humiliated", "Cautious", "Relieved", "Insulted", "Frustrated", "Depressed", "Confused", "Overwhelmed", "Annoyed", "Grumpy"];
-
     var imageUrl = [];
     var stillimageUrl = [];
-    var imgState = "still"
 
     function createButtons() {
         $("#buttons").empty();
@@ -21,18 +19,12 @@ $(document).ready(function() {
         var bClick = $(this).attr("data-id");
         $("#images-1").empty();
         $("#images-2").empty();
-        $("#images-3").empty();
-        $("#images-4").empty();
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + bClick + "&rating=pg-13&limit=10&api_key=dc6zaTOxFJmzC";
-        // var queryURL = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag="+bClick;
         $.ajax({
                 url: queryURL,
                 method: "GET"
             })
             .done(function(response) {
-                // console.log(response);
-                // var imageUrl = response.data.image_original_url;
-
                 for (var i = 0; i < 10; i++) {
                     imageUrl[i] = response.data[i].images.fixed_height.url;
                     stillimageUrl[i] = response.data[i].images.fixed_height_still.url;
@@ -43,7 +35,6 @@ $(document).ready(function() {
                     cImage.attr("alt", bClick + " Image #" + i);
                     cImage.attr("alt_src", imageUrl[i]);
                     cImage.addClass("image well well-sm");
-                    cImage.attr("data-imgid", i);
                     imgDiv.append(cImage);
                     var imgRating = $("<h3>");
                     imgRating.text("Rating: " + response.data[i].rating.toUpperCase());
