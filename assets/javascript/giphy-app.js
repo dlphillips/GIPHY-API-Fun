@@ -31,7 +31,7 @@ $(document).ready(function() {
         $("#images-2").show();
 
         // AJAX query string based on value from button click.
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + bClick + "&rating=pg-13&limit=10&api_key=dc6zaTOxFJmzC";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + bClick + "&rating=pg-13&limit=10&api_key=dc6zaTOxFJmzC";
 
         $.ajax({
                 url: queryURL,
