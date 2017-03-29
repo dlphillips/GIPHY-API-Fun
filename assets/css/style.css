@@ -8,7 +8,8 @@ body {
     font-family: 'Palanquin Dark', sans-serif;
     font-size: 150px;
     font-weight: bolder;
-    background-color: #0C98CF;
+/*    background-color: #0C98CF;*/
+	background-color: #000;
     color: #fff;
 }
 
