@@ -96,6 +96,7 @@ $(document).ready(function() {
         var tFeeling = $("#feeling").val().trim();
         myButtons.push(tFeeling);
         createButtons();
+        $("#feeling").val("");
     }
 
     // listen for click on buttons and pass to subjectClick function
