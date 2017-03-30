@@ -1,6 +1,7 @@
 body {
     font-family: 'Varela Round', sans-serif;
-    background-color: #89bdd3;
+    /*background-color: #89bdd3;*/
+    background-color: #000;
     padding-top: 15px;
 }
 
@@ -22,8 +23,8 @@ body {
 }
 
 h3 {
-    background-color: #0C98CF;
-    color: #fae596;
+    background-color: #635aff;
+    color: #ffff99;
     font-weight: bolder;
 }
 
@@ -46,25 +47,20 @@ h3 {
 }
 
 button {
-    background-color: #0C98CF;
-    color: #fae596;
+    background-color: #635aff;
+    color: #ffff99;
     font-weight: bolder;
     font-size: 20px;
 }
 
 button:hover {
-    background-color: #fae596;
-    color: #0C98CF;
-}
-
-button:active {
-    position: relative;
-    top: 1px;
+    background-color: #ffff99;
+    color: #635aff;
 }
 
 #jFun {
     font-family: 'Sonsie One', cursive;
     font-size: 130px;
     font-weight: normal;
-    color: #fae596;
+    color: #ffff99;
 }
