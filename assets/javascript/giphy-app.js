@@ -47,7 +47,7 @@ $(document).ready(function() {
                     // add div for image
                     var imgDiv = $("<div>");
                     // add class for image div
-                    imgDiv.addClass("imageDiv image well well-sm");
+                    imgDiv.addClass("imageDiv well well-sm");
                     // add image tag
                     var cImage = $("<img>");
                     // add image properties

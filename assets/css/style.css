@@ -1,6 +1,5 @@
 body {
     font-family: 'Varela Round', sans-serif;
-    /*background-color: #89bdd3;*/
     background-color: #000;
     padding-top: 15px;
 }
@@ -9,7 +8,6 @@ body {
     font-family: 'Palanquin Dark', sans-serif;
     font-size: 150px;
     font-weight: bolder;
-/*    background-color: #0C98CF;*/
 	background-color: #000;
     color: #fff;
 }
@@ -20,6 +18,10 @@ body {
     text-align: center;
     padding-top: 15px;
     margin-top: 15px;
+}
+
+.imageDiv {
+    text-align: center;    
 }
 
 h3 {
@@ -51,6 +53,7 @@ button {
     color: #ffff99;
     font-weight: bolder;
     font-size: 20px;
+    margin: 2px;
 }
 
 button:hover {
