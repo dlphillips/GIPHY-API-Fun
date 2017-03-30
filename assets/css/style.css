@@ -48,7 +48,8 @@ h3 {
     padding-bottom: 15px;
 }
 
-button {
+button,
+#feelingSubmit {
     background-color: #635aff;
     color: #ffff99;
     font-weight: bolder;
@@ -56,7 +57,8 @@ button {
     margin: 2px;
 }
 
-button:hover {
+button:hover,
+#feelingSubmit:hover {
     background-color: #ffff99;
     color: #635aff;
 }
@@ -67,3 +69,4 @@ button:hover {
     font-weight: normal;
     color: #ffff99;
 }
+

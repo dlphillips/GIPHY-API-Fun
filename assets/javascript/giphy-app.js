@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // declare variables and load list for buttons to array
-    var myButtons = ["Joyful", "Proud", "Enthusiastic", "Guilty", "Vengeful", "Worried", "Shocked", "Embarrassed", "Enamored", "Fearful", "Humiliated", "Cautious", "Relieved", "Insulted", "Frustrated", "Depressed", "Confused", "Overwhelmed", "Annoyed", "Grumpy"];
+    var myButtons = ["Joyful", "Proud", "Enthusiastic", "Guilty", "Happy", "Worried", "Shocked", "Embarrassed", "Sad", "Fearful", "Humiliated", "Cautious", "Relieved", "Insulted", "Frustrated", "Depressed", "Confused", "Overwhelmed", "Annoyed", "Grumpy"];
     var imageUrl = [];
     var stillimageUrl = [];
 
