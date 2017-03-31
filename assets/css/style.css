@@ -82,3 +82,14 @@ button:hover,
     border-width: 2px;
     border-color: #635aff;
 }
+
+#question {
+    font-weight: bolder;
+    background-color: #c9c9c9;
+    font-family: 'Palanquin Dark', sans-serif;  
+    font-size: 40px;
+}
+
+#qItalic {
+    font-style: italic;
+}
